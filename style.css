@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  background-color: #333;
+  padding: 5px;
+  margin: 20px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
+.O {
+  color: blue;
+}
+.X {
+  color: red;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#status {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+}
